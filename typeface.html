@@ -1,0 +1,606 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Coding from Life</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+<style>
+
+.triangleA {
+  position: relative;
+  top: 15px;
+}
+.triangleA1 {
+  width: 51px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 25%;
+    margin-top: 10%;
+    position: relative;
+    transform: rotate(175deg) skewY(-10deg);
+}
+
+.triangleA2 {
+  width: 10px;
+height: 55px;
+background-color: blue;
+margin-left: 25%;
+margin-top: 0%;
+}
+.triangleA3 {
+  width: 10px;
+height: 65px;
+background-color: blue;
+margin-left: 28.7%;
+margin-top: -5%;
+position: relative;
+transform: rotate(-12deg) skewY(-17deg);
+}
+.triangleA4 {
+  width: 53px;
+height: 10px;
+background-color: blue;
+margin-left: 25%;
+margin-top: -3%;
+}
+.triangleB {
+    position: relative;
+}
+.triangleB1 {
+  width: 45px;
+  height: 10px;
+  background-color: blue;
+  margin-left: 33%;
+  margin-top: -2.4%;
+  position: relative;
+  transform: rotate(175deg)skewY(-10deg);
+}
+.triangleB2 {
+  width: 10px;
+  height: 62px;
+  background-color: blue;
+  margin-left: 33%;
+  margin-top: 0%;
+  position: relative
+
+}
+.triangleB3 {
+  width: 55px;
+height: 10px;
+background-color: blue;
+margin-left: 33%;
+margin-top: -0.8%;
+position: relative;
+
+}
+.triangleB4 {
+
+  background-color: blue;
+  width: 10px;
+  height: 75px;
+  margin-left: 36.4%;
+  margin-top: -6%;
+  transform: rotate(-12deg) skewY(-17deg);
+  position: relative;
+
+}
+.triangleB5 {
+  background-color: blue;
+width: 48px;
+height: 10px;
+margin-left: 33%;
+margin-top: -3%;
+position: relative;
+
+}
+
+.triangleC {
+    position: relative;
+}
+.triangleC1 {
+  width: 50px;
+height: 10px;
+background-color: blue;
+margin-left: 41%;
+margin-top: -3.3%;
+position: relative;
+transform: rotate(175deg) skewY(-10deg);
+
+}
+.triangleC2 {
+  width: 10px;
+height: 50px;
+background-color: blue;
+margin-left: 41%;
+margin-top: 0%;
+position: relative;
+
+}
+.triangleC3 {
+  width: 55px;
+  height: 10px;
+  background-color: blue;
+  margin-left: 41%;
+  margin-top: 0%;
+  position: relative;
+}
+.triangleD {
+    position: relative;
+}
+.triangleD1 {
+  width: 40px;
+height: 10px;
+background-color: blue;
+margin-left: 49%;
+margin-top: -5.3%;
+position: relative;
+transform: rotate(175deg) skewY(-10deg);
+}
+.triangleD2 {
+  width: 10px;
+  height: 55px;
+  background-color: blue;
+  margin-left: 49%;
+  margin-top: 0%;
+  position: relative;
+}
+.triangleD3 {
+  width: 65px;
+  height: 10px;
+  background-color: blue;
+  margin-left: 49%;
+  margin-top: -0.8%;
+  position: relative;
+}
+.triangleD4 {
+  width: 10px;
+height: 50px;
+background-color: blue;
+margin-left: 53%;
+margin-top: -4%;
+position: relative;
+transform: rotate(-12deg) skewY(-3deg);
+}
+.triangleD5 {
+    position: relative;
+    margin-left: 51.5%;
+    margin-top: -5%;
+    width: 24px;
+    height: 10px;
+    background: blue;
+    transform: rotate(69deg) skewY(-17deg);
+}
+.triangleF {
+    position: relative;
+}
+.triangleF1 {
+  width: 27px;
+  height: 10px;
+  background-color: blue;
+  margin-left: 57.5%;
+  margin-top: -1%;
+  position: relative;
+  transform: rotate(175deg) skewY(-10deg);
+}
+.triangleF2 {
+  width: 10px;
+  height: 60px;
+  background-color: blue;
+  margin-left: 57.5%;
+  margin-top: 0%;
+  position: relative;
+}
+.triangleF3 {
+  width: 28px;
+  height: 10px;
+  background-color: blue;
+  margin-left: 59.5%;
+  margin-top: -5.8%;
+  position: relative;
+}
+.triangleF4 {
+    width: 56px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 58%;
+    margin-top: 2%;
+    position: relative;
+}
+.triangleE {
+  position: relative;
+top: 4%;
+left: 0.3%;
+}
+.triangleE1 {
+  width: 28px;
+height: 10px;
+background-color: blue;
+margin-left: 67.5%;
+margin-top: -5.8%;
+position: relative;
+}
+.triangleE2 {
+  width: 28px;
+  height: 10px;
+  background-color: blue;
+  margin-left: 65.5%;
+  margin-top: -0.5%;
+  position: relative;
+  transform: rotate(175deg) skewY(-10deg);
+}
+.triangleE3 {
+  width: 10px;
+height: 46px;
+background-color: blue;
+margin-left: 65.5%;
+margin-top: 0%;
+position: relative;
+}
+.triangleE4 {
+  position: relative;
+margin-left: 65.5%;
+margin-top: 0%;
+width: 24px;
+height: 10px;
+background: blue;
+transform: rotate(69deg) skewY(-17deg);
+}
+.triangleE5 {
+    width: 38px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 66.85%;
+    margin-top: -0.2%;
+    position: relative;
+}
+.triangleE6 {
+    width: 56px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 66%;
+    margin-top: -3.5%;
+    position: relative;
+}
+
+
+.triangleG {
+  position: relative;
+  top: 9.5%;
+  left: 8.5%;
+}
+.triangleG1 {
+  width: 28px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 67.5%;
+    margin-top: -5.8%;
+    position: relative;
+}
+.triangleG2 {
+  width: 28px;
+height: 10px;
+background-color: blue;
+margin-left: 65.5%;
+margin-top: -0.5%;
+position: relative;
+transform: rotate(175deg) skewY(-10deg);
+}
+.triangleG3 {
+  width: 10px;
+    height: 44px;
+    background-color: blue;
+    margin-left: 65.5%;
+    margin-top: 0%;
+    position: relative;
+}
+.triangleG4 {
+  position: relative;
+    margin-left: 65.5%;
+    margin-top: 0%;
+    width: 24px;
+    height: 10px;
+    background: blue;
+    transform: rotate(69deg) skewY(-17deg);
+}
+.triangleG5 {
+  width: 38px;
+  height: 10px;
+  background-color: blue;
+  margin-left: 66.85%;
+  margin-top: -0.2%;
+  position: relative;
+}
+.triangleG6 {
+    position: relative;
+    margin-left: 69%;
+    margin-top: -1.3%;
+    width: 24px;
+    height: 10px;
+    background: blue;
+    transform: rotate(-58deg) skewY(9deg);
+}
+.triangleG7 {
+    width: 10px;
+    height: 25px;
+    background-color: blue;
+    margin-left: 70%;
+    margin-top: -3%;
+    position: relative;
+}
+.triangleG8 {
+    width: 27px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 68.7%;
+    margin-top: -2%;
+    position: relative;
+}
+.triangleI {
+    position: relative;
+    top: 14%;
+left: -6%;
+}
+.triangleI1 {
+    position: relative;
+    margin-left: 25.5%;
+    margin-top: 3%;
+    width: 24px;
+    height: 10px;
+    background: blue;
+    transform: rotate(69deg) skewY(-17deg);
+}
+.triangleI2 {
+    width: 10px;
+    height: 50px;
+    background-color: blue;
+    margin-left: 26.6%;
+    margin-top: 0%;
+    position: relative;
+}
+.triangleI3 {
+    position: relative;
+    margin-left: 26.5%;
+    margin-top: 0%;
+    width: 24px;
+    height: 10px;
+    background: blue;
+    transform: rotate(69deg) skewY(-17deg);
+}
+.triangleK {
+    position: relative;
+    top: 9%;
+    left: 3%;
+}
+.triangleK1 {
+    width: 32px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 34%;
+    margin-top: -5%;
+    position: relative;
+    transform: rotate(175deg) skewY(-10deg);
+}
+.triangleK2 {
+    width: 10px;
+    height: 70px;
+    background-color: blue;
+    margin-left: 33.6%;
+    margin-top: -0.5%;
+    position: relative;
+}
+.triangleK3 {
+    width: 24px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 34%;
+    margin-top: -4%;
+    position: relative;
+    transform: rotate(175deg) skewY(-10deg);
+}
+.triangleK4 {
+    width: 37px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 35.3%;
+    margin-top: -0.9%;
+    position: relative;
+}
+.triangleK5 {
+    width: 23px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 33.9%;
+    margin-top: 0.2%;
+    position: relative;
+}
+.triangleK6 {
+    position: relative;
+    margin-left: 35%;
+    margin-top: 0%;
+    width: 35px;
+    height: 10px;
+    background: blue;
+    transform: rotate(69deg) skewY(-17deg);
+}
+
+.triangleL {
+    position: relative;
+    top:9%;
+    left:-21%;
+}
+.triangleL1 {
+    width: 27px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 66%;
+    margin-top: -3%;
+    position: relative;
+    transform: rotate(175deg) skewY(-10deg);
+}
+.triangleL2 {
+    width: 10px;
+    height: 50px;
+    background-color: blue;
+    margin-left: 65.6%;
+    margin-top: -0.4%;
+    position: relative;
+}
+.triangleL3 {
+    position: relative;
+    margin-left: 65.5%;
+    margin-top: 0%;
+    width: 24px;
+    height: 10px;
+    background: blue;
+    transform: rotate(69deg) skewY(-17deg);
+}
+.triangleL4 {
+    width: 47px;
+    height: 10px;
+    background-color: blue;
+    margin-left: 66.8%;
+    margin-top: 0%;
+    position: relative;
+}
+.triangleL5 {
+    position: relative;
+    margin-left: 69.6%;
+    margin-top: -1.3%;
+    width: 24px;
+    height: 10px;
+    background: blue;
+    transform: rotate(-58deg) skewY(9deg);
+}
+
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+  <div class="triangleA">
+  <div class="triangleA1"></div>
+  <div class="triangleA2"></div>
+  <div class="triangleA3"></div>
+  <div class="triangleA4"></div>
+  </div>
+
+  <div class="triangleB">
+  <div class="triangleB1"></div>
+  <div class="triangleB2"></div>
+  <div class="triangleB3"></div>
+  <div class="triangleB4"></div>
+  <div class="triangleB5"></div>
+  <div class="triangleB6"></div>
+  </div>
+
+
+  <div class="triangleC">
+  <div class="triangleC1"></div>
+  <div class="triangleC2"></div>
+  <div class="triangleC3"></div>
+  </div>
+
+  <div class="triangleD">
+  <div class="triangleD1"></div>
+  <div class="triangleD2"></div>
+  <div class="triangleD3"></div>
+  <div class="triangleD4"></div>
+  <div class="triangleD5"></div>
+  </div>
+
+
+  <div class="triangleF">
+  <div class="triangleF1"></div>
+  <div class="triangleF2"></div>
+  <div class="triangleF3"></div>
+  <div class="triangleF4"></div>
+  <div class="triangleF5"></div>
+  </div>
+
+  <div class="triangleE">
+  <div class="triangleE1"></div>
+  <div class="triangleE2"></div>
+  <div class="triangleE3"></div>
+  <div class="triangleE4"></div>
+  <div class="triangleE5"></div>
+  <div class="triangleE6"></div>
+  </div>
+
+  <div class="triangleG">
+  <div class="triangleG1"></div>
+  <div class="triangleG2"></div>
+  <div class="triangleG3"></div>
+  <div class="triangleG4"></div>
+  <div class="triangleG5"></div>
+  <div class="triangleG6"></div>
+  <div class="triangleG7"></div>
+  <div class="triangleG8"></div>
+  </div>
+
+  <div class="triangleH">
+    <div class="triangleH1"></div>
+    <div class="triangleH2"></div>
+    <div class="triangleH3"></div>
+    <div class="triangleH4"></div>
+    <div class="triangleH5"></div>
+    <div class="triangleH6"></div>
+    <div class="triangleH7"></div>
+  </div>
+
+  <div class="triangleI">
+    <div class="triangleI1"></div>
+    <div class="triangleI2"></div>
+    <div class="triangleI3"></div>
+  </div>
+
+  <div class="triangleJ">
+    <div class="triangleJ1"></div>
+    <div class="triangleJ2"></div>
+    <div class="triangleJ3"></div>
+    <div class="triangleJ4"></div>
+    <div class="triangleJ5"></div>
+    <div class="triangleJ6"></div>
+  </div>
+
+  <div class="triangleL">
+    <div class="triangleL1"></div>
+    <div class="triangleL2"></div>
+    <div class="triangleL3"></div>
+    <div class="triangleL4"></div>
+    <div class="triangleL5"></div>
+  </div>
+
+
+
+  <div class="triangleK">
+    <div class="triangleK1"></div>
+    <div class="triangleK2"></div>
+    <div class="triangleK3"></div>
+    <div class="triangleK4"></div>
+    <div class="triangleK5"></div>
+    <div class="triangleK6"></div>
+  </div>
+
+  <div class="triangleO">
+    <div class="triangleO1"></div>
+    <div class="triangleO2"></div>
+    <div class="triangleO3"></div>
+    <div class="triangleO4"></div>
+    <div class="triangleO5"></div>
+    <div class="triangleO6"></div>
+    <div class="triangleO7"></div>
+    <div class="triangleO8"></div>
+  </div>
+
+
+
+</body>
+</html>
