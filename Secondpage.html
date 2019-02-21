@@ -1,0 +1,931 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Coding from Life</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+<style>
+body{
+  background-color: #ffdb4d;
+}
+
+.secondpage{
+  position: relative;
+
+}
+
+.A00 {
+  position: absolute;
+top: 10%;
+left: 12%;
+}
+.A001 {
+    width: 57px;
+    height: 10px;
+    background-color: #4f8ecc;
+    margin-left: 25%;
+    margin-top: -0.2%;
+    transform: rotate(175deg) skewY(-10deg);
+}
+.B00 {
+  position: absolute;
+  left: 20.5%;
+  top: 10%;
+}
+.B001 {
+  width: 57px;
+height: 10px;
+background-color: #4f8ecc;
+margin-left: 25%;
+margin-top: -0.2%;
+position: relative;
+transform: rotate(175deg) skewY(-10deg);
+}
+.B002 {
+  width: 10px;
+    height: 62px;
+    background-color: #4f8ecc;
+    margin-left: 113%;
+    margin-top: -28%;
+    position: relative;
+    transform: rotate(-6deg) skewY(-7deg);
+}
+.C00 {
+  position: absolute;
+top: 10%;
+left: 30%;
+}
+.C001 {
+  width: 57px;
+    height: 10px;
+    background-color: #4f8ecc;
+    margin-left: 0%;
+    margin-top: 0%;
+    position: relative;
+    transform: rotate(175deg) skewY(-10deg);
+}
+.D00 {
+  position: absolute;
+  top: 10%;
+  left: 39%;
+}
+.D001 {
+  width: 57px;
+    height: 10px;
+    background-color: #4f8ecc;
+    margin-left: 0%;
+    margin-top: 0%;
+    position: relative;
+    transform: rotate(175deg) skewY(-10deg);
+}
+.D002 {
+  width: 10px;
+height: 64px;
+background-color: #4f8ecc;
+margin-left: 90%;
+margin-top: -29%;
+position: relative;
+transform: rotate(-6deg) skewY(-7deg);
+}
+.E00 {
+  position: absolute;
+top: 10%;
+left: 47%;
+}
+.E001 {
+  width: 25px;
+height: 10px;
+background-color: #4f8ecc;
+margin-left: 65%;
+margin-top: -0.6%;
+position: relative;
+transform: rotate(175deg) skewY(-10deg);
+  }
+  .E002 {
+    position: relative;
+margin-left: 65.3%;
+margin-top: 200%;
+width: 25px;
+height: 10px;
+background: #4f8ecc;
+transform: rotate(43deg) skewY(-14deg);
+  }
+  .F00 {
+    position: absolute;
+  top: 10%;
+  left: 54%;
+  }
+  .F001 {
+    width: 25px;
+height: 10px;
+background-color: #4f8ecc;
+margin-left: 65%;
+margin-top: -0.6%;
+position: relative;
+transform: rotate(175deg) skewY(-10deg);
+  }
+  .G00 {
+    position: absolute;
+    top: 10%;
+    left: 61%;
+  }
+  .G001 {
+    width: 25px;
+      height: 10px;
+      background-color: #4f8ecc;
+      margin-left: 65%;
+      margin-top: -0.55%;
+      position: relative;
+      transform: rotate(175deg) skewY(-10deg);
+  }
+  .G002 {
+    position: relative;
+    margin-left: 65.3%;
+    margin-top: 200%;
+    width: 25px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(43deg) skewY(-14deg);
+  }
+  .G003 {
+    position: relative;
+    margin-left: 260%;
+    margin-top: -35%;
+    width: 20px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(-45deg) skewY(9deg);
+  }
+  .H00 {
+    position: absolute;
+  top: 10%;
+  left: 70.5%;
+  }
+  .H001 {
+    width: 25px;
+  height: 10px;
+  background-color: #4f8ecc;
+  margin-left: 65%;
+  margin-top: -0.55%;
+  position: relative;
+  transform: rotate(175deg) skewY(-10deg);
+  }
+  .H002 {
+    position: relative;
+margin-left: 65.2%;
+margin-top: 200%;
+width: 25px;
+height: 10px;
+background: #4f8ecc;
+transform: rotate(43deg) skewY(-14deg);
+  }
+  .H003 {
+    width: 25px;
+  height: 10px;
+  background-color: #4f8ecc;
+  margin-left: 270%;
+  margin-top: -280%;
+  position: relative;
+  transform: rotate(175deg) skewY(-10deg);
+  }
+  .H004 {
+    position: relative;
+  margin-left: 270%;
+  margin-top: 200%;
+  width: 25px;
+  height: 10px;
+  background: #4f8ecc;
+  transform: rotate(43deg) skewY(-14deg);
+  }
+  .I00 {
+    position: absolute;
+    top: 25%;
+    left: 7%;
+}
+  .I001 {
+    position: relative;
+    margin-left: 25.4%;
+    margin-top: 1%;
+    width: 25px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(27deg) skewY(8deg);
+  }
+  .I002 {
+    position: relative;
+    margin-left: 100%;
+    margin-top: 200%;
+    width: 25px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(44deg) skewY(-8deg);
+  }
+  .J00 {
+    position: absolute;
+top: 25%;
+left: 20%;
+  }
+  .J001 {
+    position: relative;
+    margin-left: 25.4%;
+    margin-top: 1%;
+    width: 25px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(27deg) skewY(8deg);
+  }
+  .J002 {
+    position: relative;
+    margin-left: 25.3%;
+    margin-top: 200%;
+    width: 24px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(-45deg) skewY(9deg);
+  }
+  .J003 {
+    position: relative;
+    margin-left: -150%;
+    margin-top: -36%;
+    width: 25px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(43deg) skewY(-14deg);
+  }
+  .K00 {
+    position: absolute;
+top: 25%;
+left: 26%;
+  }
+  .K001 {
+    width: 35px;
+  height: 10px;
+  background-color: #4f8ecc;
+  margin-left: 25%;
+  margin-top: -0.2%;
+  position: relative;
+  transform: rotate(175deg) skewY(-10deg);
+  }
+  .K002 {
+    width: 28px;
+  height: 10px;
+  background-color: #4f8ecc;
+  margin-left: 28.3%;
+  margin-top: 65%;
+  position: relative;
+  transform: rotate(175deg) skewY(-10deg);
+  }
+  .K003 {
+    position: relative;
+    margin-left: 95%;
+    margin-top: -25%;
+    width: 35px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(15deg) skewY(2deg);
+  }
+  .K004 {
+    position: relative;
+    margin-left: 70%;
+    margin-top: 38%;
+    width: 30px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(55deg) skewY(-14deg);
+  }
+
+  .L00{
+    position: absolute;
+    top: 34%;
+    left: 34%;
+  }
+  .L001 {
+    position: relative;
+  margin-left: 65.8%;
+  margin-top: -0.14%;
+  width: 25px;
+  height: 10px;
+  background: #4f8ecc;
+  transform: rotate(43deg) skewY(-14deg);
+  }
+  .M00 {
+    position: absolute;
+  top: 27%;
+  left: 41%;
+  }
+  .M001 {
+      width: 31px;
+      height: 10px;
+      background-color: #4f8ecc;
+      margin-left: 65%;
+      margin-top: -0.55%;
+      position: relative;
+      transform: rotate(175deg) skewY(-10deg);
+  }
+  .M002 {
+    width: 10px;
+  height: 59px;
+  background-color: #4f8ecc;
+  margin-left: 207%;
+  margin-top: 0%;
+  position: relative;
+  transform: rotate(12deg) skewY(20deg);
+  }
+  .M003 {
+    position: relative;
+    margin-left: 228%;
+    margin-top: -200%;
+    width: 30px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(5deg) skewY(8deg);
+  }
+  .N00 {
+    position: absolute;
+top: 27%;
+left: 51%;
+  }
+
+  .N001 {
+    width: 34px;
+    height: 10px;
+    background-color: #4f8ecc;
+    margin-left: 65%;
+    margin-top: -0.55%;
+    position: relative;
+    transform: rotate(175deg) skewY(-10deg);
+  }
+  .N002 {
+    width: 10px;
+  height: 61px;
+  background-color: #4f8ecc;
+  margin-left: 190%;
+  margin-top: 0%;
+  position: relative;
+  transform: rotate(12deg) skewY(20deg);
+  }
+  .N003 {
+      position: relative;
+      margin-left: 209%;
+      margin-top: -200%;
+      width: 20px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(13deg) skewY(8deg);
+  }
+  .O00 {
+      position: absolute;
+      top: 27%;
+      left: 60%;
+  }
+  .O001 {
+    background-color: #4f8ecc;
+    width: 24px;
+    height: 10px;
+    position: relative;
+    margin-top: -0.38%;
+    margin-left: 41.6%;
+    transform: rotate(123deg) skewY(20deg);
+  }
+  .O002 {
+    position: relative;
+  margin-left: 220%;
+  margin-top: -40%;
+  width: 25px;
+  height: 10px;
+  background: #4f8ecc;
+  transform: rotate(43deg) skewY(-15deg);
+  }
+  .O003 {
+    position: relative;
+    margin-left: 218%;
+    margin-top: 190%;
+    width: 25px;
+    height: 10px;
+    background: #4f8ecc;
+    transform: rotate(-45deg) skewY(5deg);
+  }
+    .O0004 {
+    position: relative;
+      margin-left: 43%;
+      margin-top: -34%;
+      width: 23px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(27deg) skewY(9deg);
+  }
+  .P00 {
+      position: absolute;
+      top: 27%;
+      left:69%;
+  }
+  .P001 {
+      width: 58px;
+      height: 10px;
+      background-color: #4f8ecc;
+      margin-left: 25%;
+      margin-top: -0.2%;
+      position: relative;
+      transform: rotate(175deg) skewY(-10deg);
+  }
+    .P002 {
+      width: 10px;
+      height: 50px;
+      background-color: #4f8ecc;
+      margin-left: 111%;
+      margin-top: -17%;
+      position: relative;
+      transform: rotate(-6deg) skewY(-7deg);
+  }
+  .Q00 {
+      position: absolute;
+      top: 50%;
+      left: 30%;
+  }
+  .Q001 {
+      background-color: #4f8ecc;
+      width: 24px;
+      height: 10px;
+      position: relative;
+      margin-top: -0.38%;
+      margin-left: 29%;
+      transform: rotate(123deg) skewY(20deg);
+  }
+  .Q002 {
+      position: relative;
+      margin-left: 29%;
+      margin-top: 222%;
+      width: 25px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(43deg) skewY(-14deg);
+  }
+  .Q003 {
+      position: relative;
+      margin-left: 220%;
+      margin-top: -45%;
+      width: 24px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(-45deg) skewY(9deg);
+  }
+  .Q0004 {
+      position: relative;
+      margin-left: 225%;
+      margin-top: -288%;
+      width: 23px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(27deg) skewY(3deg);
+  }
+  .R00 {
+      position:  absolute;
+      top: 50%;
+      left: 38%;
+  }
+  .R0001 {
+      background-color: #4f8ecc;
+      width: 24px;
+      height: 10px;
+      position: relative;
+      margin-top: -0.38%;
+      margin-left: 41.6%;
+      transform: rotate(123deg) skewY(20deg);
+  }
+  .R002 {
+      position: relative;
+      margin-left: 115%;
+      margin-top: 67%;
+      width: 24px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(-45deg) skewY(9deg);
+  }
+  .R003 {
+      position: relative;
+      margin-left: 33%;
+      margin-top: 28%;
+      width: 50px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(27deg) skewY(5deg);
+  }
+  .S00 {
+      position: absolute;
+      top: 50%;
+      left:51%;
+  }
+  .S001 {
+      position: relative;
+      margin-left: 46%;
+      margin-top: 0%;
+      width: 20px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(27deg) skewY(5deg);
+  }
+  .S002 {
+      background-color: #4f8ecc;
+      width: 24px;
+      height: 10px;
+      position: relative;
+      margin-top: -35%;
+      margin-left: -150%;
+      transform: rotate(128deg) skewY(14deg);
+  }
+  .S003 {
+      position: relative;
+      margin-left: 27%;
+      margin-top: 200%;
+      width: 24px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(-45deg) skewY(9deg);
+  }
+  .S004 {
+      position: relative;
+      margin-left: -152%;
+      margin-top: -40%;
+      width: 25px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(43deg) skewY(-14deg);
+  }
+  .T00 {
+      position: absolute;;
+      top: 50%;
+      left: 61%;
+  }
+  .T001 {
+      position: relative;
+      margin-left: 46%;
+      margin-top: 0%;
+      width: 20px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(27deg) skewY(5deg);
+  }
+  .T002 {
+      background-color: #4f8ecc;
+      width: 24px;
+      height: 10px;
+      position: relative;
+      margin-top: -36%;
+      margin-left: -200%;
+      transform: rotate(128deg) skewY(14deg);
+  }
+  .U00 {
+      position: absolute;
+      top: 50%;
+      left: 66%;
+  }
+  .U001 {
+      position: relative;
+      margin-left: 41.6%;
+      margin-top: 250%;
+      width: 25px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(43deg) skewY(-14deg);
+  }
+  .U002 {
+      position: relative;
+      margin-left: 240%;
+      margin-top: -39%;
+      width: 22px;
+      height: 10px;
+      background: #4f8ecc;
+      transform: rotate(-45deg) skewY(9deg);
+  }
+  .U003 {
+      width: 10px;
+      height: 58px;
+      background-color: #4f8ecc;
+      margin-left: 46.1%;
+      margin-top: -5.2%;
+      position: relative;
+  }
+  .V00 {
+      position: absolute;
+      top: 73%;
+      left: 30%;
+  }
+  .V001 {
+      background-color: #4f8ecc;
+      width: 24px;
+      height: 10px;
+      position: relative;
+      margin-top: -0.1%;
+      margin-left: 41.3%;
+      transform: rotate(140deg) skewY(0deg);
+  }
+  .V002 {
+      background-color: #4f8ecc;
+      width: 22px;
+      height: 10px;
+      position: relative;
+      margin-top: 0%;
+      margin-left: 280%;
+      transform: rotate(30deg) skewY(0deg);
+  }
+  .W00 {
+      position: absolute;
+      top: 74%;
+      left: 41%;
+      transform: rotate(-8deg);
+  }
+  .W001 {
+      background-color: #4f8ecc;
+      width: 24px;
+      height: 10px;
+      position: relative;
+      margin-top: -0%;
+      margin-left: 41.3%;
+      transform: rotate(140deg) skewY(0deg);
+  }
+  .W002 {
+      position: relative;
+      width: 10px;
+      height: 60px;
+      background-color: #4f8ecc;
+      margin-left: 240%;
+      margin-top: 22%;
+      transform: rotate(170deg) skewY(19deg);
+  }
+  .W003 {
+      background-color: #4f8ecc;
+      width: 20px;
+      height: 10px;
+      position: relative;
+      margin-top: -230%;
+      margin-left: 370%;
+      transform: rotate(30deg) skewY(0deg);
+  }
+  .X00 {
+      position: absolute;
+      top: 74%;
+      left: 52%;
+  }
+  .X001 {
+      background-color: #4f8ecc;
+      width: 24px;
+      height: 10px;
+      position: relative;
+      margin-top: -0%;
+      margin-left: 41.3%;
+      transform: rotate(140deg) skewY(0deg);
+  }
+  .X002 {
+      background-color: #4f8ecc;
+      width: 25px;
+      height: 10px;
+      position: relative;
+      margin-top: 50%;
+      margin-left: 250%;
+      transform: rotate(54deg) skewY(0deg);
+  }
+  .Y00 {
+      position: absolute;
+      top: 74%;
+      left: 63%;
+  }
+  .Y001 {
+      background-color: #4f8ecc;
+      width: 25px;
+      height: 10px;
+      position: relative;
+      margin-top: -0.1%;
+      margin-left: 41.3%;
+      transform: rotate(129deg) skewY(0deg);
+  }
+  .Y002 {
+      position: relative;
+      width: 10px;
+      height: 50px;
+      background-color: #4f8ecc;
+      margin-left: 87%;
+      margin-top: -17%;
+      transform: rotate(135deg) skewY(0deg);
+  }
+  .Y003 {
+      background-color: #4f8ecc;
+      width: 20px;
+      height: 10px;
+      position: relative;
+      margin-top: -200%;
+      margin-left: 250%;
+      transform: rotate(40deg) skewY(0deg);
+  }
+  .Z00 {
+      position: absolute;
+      top: 74%;
+      left: 72%;
+  }
+  .Z001 {
+      background-color: #4f8ecc;
+      width: 30px;
+      height: 10px;
+      position: relative;
+      margin-top: -0.1%;
+      margin-left: 41.3%;
+      transform: rotate(129deg) skewY(0deg);
+  }
+  .Z002 {
+      background-color: #4f8ecc;
+      width: 31px;
+      height: 10px;
+      position: relative;
+      margin-top: 120%;
+      margin-left: 200%;
+      transform: rotate(125deg) skewY(-1deg);
+  }
+  a:link, a:visited {
+  padding: 23px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color:#4f8ecc;
+  font-size:28px;
+  font-family:'Libre Barcode 39 Text', cursive;
+  position:relative;
+  margin-top:40%;
+  margin-left:83%;
+}
+
+a:hover, a:active {
+  background-color:darkorange;
+}
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+
+  <div class="secondpage">
+  <div class="A00">
+    <div class="A001"></div>
+  </div>
+
+  <div class="B00">
+    <div class="B001"></div>
+    <div class="B002"></div>
+  </div>
+
+  <div class="C00">
+    <div class="C001"></div>
+  </div>
+
+  <div class="D00">
+    <div class="D001"></div>
+    <div class="D002"></div>
+  </div>
+
+  <div class="E00">
+    <div class="E001"></div>
+    <div class="E002"></div>
+  </div>
+
+  <div class="F00">
+    <div class="F001"></div>
+  </div>
+
+  <div class="G00">
+    <div class="G001"></div>
+    <div class="G002"></div>
+    <div class="G003"></div>
+  </div>
+
+  <div class="H00">
+    <div class="H001"></div>
+    <div class="H002"></div>
+    <div class="H003"></div>
+    <div class="H004"></div>
+  </div>
+
+  <div class="I00">
+    <div class="I001"></div>
+    <div class="I002"></div>
+  </div>
+
+  <div class="J00">
+    <div class="J001"></div>
+    <div class="J002"></div>
+    <div class="J003"></div>
+  </div>
+
+  <div class="K00">
+    <div class="K001"></div>
+    <div class="K002"></div>
+    <div class="K003"></div>
+    <div class="K004"></div>
+  </div>
+
+  <div class="L00">
+    <div class="L001"></div>
+    <div class="L002"></div>
+  </div>
+
+  <div class="M00">
+    <div class="M001"></div>
+    <div class="M002"></div>
+    <div class="M003"></div>
+  </div>
+
+  <div class="N00">
+    <div class="N001"></div>
+    <div class="N002"></div>
+    <div class="N003"></div>
+  </div>
+
+  <div class="O00">
+    <div class="O001"></div>
+    <div class="O002"></div>
+    <div class="O003"></div>
+    <div class="O004"></div>
+  </div>
+
+  <div class="P00">
+    <div class="P001"></div>
+    <div class="P002"></div>
+  </div>
+
+  <div class="Q00">
+    <div class="Q001"></div>
+    <div class="Q002"></div>
+    <div class="Q003"></div>
+    <div class="Q004"></div>
+  </div>
+
+  <div class="R00">
+    <div class="R001"></div>
+    <div class="R002"></div>
+    <div class="R003"></div>
+    <div class="R004"></div>
+  </div>
+
+  <div class="S00">
+    <div class="S001"></div>
+    <div class="S002"></div>
+    <div class="S003"></div>
+    <div class="S004"></div>
+  </div>
+
+  <div class="T00">
+    <div class="T001"></div>
+    <div class="T002"></div>
+  </div>
+
+  <div class="U00">
+    <div class="U001"></div>
+    <div class="U002"></div>
+  </div>
+
+  <div class="V00">
+    <div class="V001"></div>
+    <div class="V002"></div>
+  </div>
+
+  <div class="W00">
+    <div class="W001"></div>
+    <div class="W002"></div>
+    <div class="W003"></div>
+  </div>
+
+  <div class="X00">
+    <div class="X001"></div>
+    <div class="X002"></div>
+  </div>
+
+  <div class="Y00">
+    <div class="Y001"></div>
+    <div class="Y002"></div>
+    <div class="Y003"></div>
+  </div>
+
+  <div class="Z00">
+    <div class="Z001"></div>
+    <div class="Z002"></div>
+  </div>
+
+  <a href="thirdpage.html" target="_blank">sellotape</a>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
