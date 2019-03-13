@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Coding from Life</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Fascinate|Luckiest+Guy|Sigmar+One|Skranji:700" rel="stylesheet">
+<style>
+body{
+  background-color: #235EA9;
+}
+.M{
+  font-family: 'Fascinate', cursive;
+  font-size: 150px;
+  margin-top: 13%;
+  margin-left: 10%;
+  position: relative;
+}
+.color{
+  animation: color 5s infinite;
+}
+@keyframes color {
+  0% {
+    color: #FFED00;
+  }
+  50%{
+    color:#ffa31a;
+  }
+  100% {
+    color: #EDE5D9;
+  }
+}
+.O{
+  font-family: 'Fascinate', cursive;
+  font-size: 150px;
+  margin-top: -16%;
+  margin-left: 34%;
+  position: relative;
+}
+.color{
+  animation: color 5s infinite;
+}
+@keyframes color {
+  0% {
+    color: #FFED00;
+  }
+  50%{
+    color:#ffa31a;
+  }
+  100% {
+    color: #EDE5D9;
+  }
+}
+.D{
+  font-family: 'Fascinate', cursive;
+  font-size: 150px;
+  margin-top: -16%;
+  margin-left: 59%;
+  position: relative;
+}
+.heartBeat{
+  animation-name: heartBeat;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.5);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.5);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+.E{
+  font-family: 'Fascinate', cursive;
+  font-size: 150px;
+  margin-top: -16%;
+  margin-left: 80%;
+  position: relative;
+}
+.rotateIn {
+  animation-name: rotateIn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: translate3d(0, 0, 100deg);
+    opacity: 1;
+  }
+}
+
+.blue{
+  width: 370px;
+  height: 600px;
+  background-color: #6599CC;
+  position: absolute;
+  margin-top: -29%;
+  margin-left: 25%;
+  cursor: pointer;
+}
+.rollOut.hover {
+    animation-name: rollOut;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+  }
+@keyframes rollOut {
+  50% {
+  transform: translate3D(800px, 0px, 0);
+}
+  100%{
+  left:calc(100% - 402px);
+  }
+}
+.gray {
+    width: 350px;
+    height: 600px;
+    background-color: #778AA2;
+    position: absolute;
+    margin-top: -29%;
+    margin-left: 50%;
+    cursor: pointer;
+  }
+  .roll.hover{
+      animation-name: roll;
+      animation-duration: 20s;
+      animation-timing-function: ease-in-out;
+    }
+  @keyframes roll {
+    50% {
+    transform: translate3D(700px, 0px, 0);
+  }
+  }
+.dark {
+    width: 310px;
+    height: 600px;
+    background-color: #34404E;
+    position: absolute;
+    margin-top: -29%;
+    margin-left: 75%;
+    cursor: pointer;
+  }
+  .rolls.hover {
+      animation-name: rolls;
+      animation-duration: 20s;
+      animation-timing-function: ease-in-out;
+    }
+  @keyframes rolls {
+    50% {
+    transform: translate3D(300px, 0px, 0);
+  }
+  }
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+<div class="M">M</div>
+<div class="O color">O</div>
+<div class="D heartBeat">D</div>
+<div class="E rotateIn">E</div>
+<div class="blue rollOut"></div>
+<div class="gray roll"></div>
+<div class="dark rolls"></div>
+
+
+
+
+
+
+
+<script>
+  let rollOut = document.querySelector('.rollOut')
+
+  rollOut.addEventListener('mouseenter',function(){
+      rollOut.classList.add('hover')
+  })
+  let roll = document.querySelector('.roll')
+
+  roll.addEventListener('mouseenter',function(){
+      roll.classList.add('hover')
+  })
+  let rolls = document.querySelector('.rolls')
+
+  rolls.addEventListener('mouseenter',function(){
+      rolls.classList.add('hover')
+  })
+
+
+</script>
+</body>
+</html>
