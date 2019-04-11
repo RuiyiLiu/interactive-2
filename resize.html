@@ -1,0 +1,87 @@
+<html lang="en"><head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer=""></script>
+    <style>
+    .circle {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      position:absolute;
+    }
+    #top {
+      background: #ff8195;
+      left: 0;
+      top: 0vh;
+    }
+
+  #right {
+    background:#faf2e8;
+    right: 0vw;
+    bottom: 50vh;
+
+  }
+    #left {
+      background: #fdd5c8;
+      left: 0;
+      top: 75vh;
+
+    }
+    #bottom {
+      background: #f9476c;
+      left: 76vw;
+      top: 75vh;
+
+    }
+  </style>
+  </head>
+  <body style="background-color: rgb(230, 100, 100); background-position: initial initial; background-repeat: initial initial;">
+    <div class="circle" id="top">
+
+    </div>
+    <div class="circle" id="right">
+
+    </div>
+    <div class="circle" id="left">
+
+    </div>
+    <div class="circle" id="bottom">
+
+    </div>
+
+    <script>
+    /* If you're feeling fancy you can add interactivity
+    to your site with Javascript */
+
+    // prints "hi" in the browser's dev tools console
+    console.log('hi');
+    window.addEventListener('resize',pageResized)
+
+
+    function pageResized(){
+      console.log(window.innerHeight, window.innerWidth)
+
+
+      let windowPercentOfScreen = (window.innerHeight / window.screen.height) * 100
+
+      let rotation = (window.innerWidth / window.screen.width) * 360
+
+      let colorFromScreenHeight = 'hsl(' + rotation + ','+windowPercentOfScreen+'%,90%)'
+      document.body.style.background = colorFromScreenHeight
+      printout.innerText = 'hsl(' + Math.round(rotation) + ','+Math.round(windowPercentOfScreen)+'%,90%)'
+    }
+
+    pageResized()
+
+
+    </script>
+
+
+</body></html>
