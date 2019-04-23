@@ -1,0 +1,115 @@
+<html lang="en"><head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer=""></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+    <style>
+    body{
+      background-color:#e4dccf;
+    }
+    .one{
+      background-color: #d7af43;
+      width: 8vw;
+      height: 15vh;
+      position: relative;
+      cursor: pointer;
+    }
+    .back:hover{
+      animation-name: back;
+      animation-duration:3s;
+    }
+    @keyframes back {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+      10%,
+      20% {
+        transform: scale3d(0.3, 0.3, 0.3) rotate3d(0, 0, 1, 6deg);
+      }
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -10deg);
+      }
+      40%,
+      60%,
+      80% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 4deg);
+      }
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+    .two{
+      background-color: #0c4027;
+      width: 8vw;
+      height: 15vh;
+      position: relative;
+      margin-left: 91vw;
+      margin-top: 68vh;
+      cursor: pointer;
+    }
+    .next:hover{
+      animation-name:next;
+      animation-duration:3s
+    }
+    @keyframes next{
+      20%{transform:rotate(45deg);
+         background-color:#1070a2;
+       }
+      50%{
+        transform:rotate(90deg);
+        background-color:#e4dccf;
+      }
+      70%{
+        transform:rotate(265deg);
+        background-color:#d7af43;
+      }
+      100%{
+        transform: rotate(360deg);
+        background-color:#0c4027;
+      }
+    }
+    img.square {
+      width: 33vw;
+      margin-left: 33vw;
+      position: relative;
+      margin-top: -87vh;
+    }
+    p{
+      font-size: 18px;
+      font-family: 'Audiowide', cursive;
+      position: relative;
+      text-align: center;
+      width: 31vw;
+      line-height: 3vw;
+      margin-left: 34vw;
+      margin-top: -22vh;
+    }
+
+</style>
+  </head>
+
+  <body>
+    <div>
+      <a href="file:///Users/ZMM/Desktop/interactive-2/final%20project%20/homepage.html"><div class="one back"></div></a>
+      <a href="file:///Users/ZMM/Desktop/interactive-2/final%20project%20/final1.html"><div class="two next"></div></a>
+    </div>
+    <div>
+      <img class="square" src="images/square.jpg">
+      <p>Strawberry, 2002,
+          Mark Bradford
+        collection of Barbara and Bruce Berger
+      </p>
+    </div>
+
+</body></html>

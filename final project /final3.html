@@ -1,0 +1,114 @@
+<html lang="en"><head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer=""></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+    <style>
+    body{
+      background-color:#e4dccf;
+    }
+    .one{
+      background-color: #1070a2;
+      width: 8vw;
+      height: 15vh;
+      position: relative;
+      cursor: pointer;
+    }
+    .back:hover{
+      animation-name: back;
+      animation-duration:3s;
+    }
+    @keyframes back {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+      10%,
+      20% {
+        transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -7deg);
+      }
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 7deg);
+      }
+      40%,
+      60%,
+      80% {
+        transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -7deg);
+      }
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+    .two{
+      background-color: #d7af43;
+      width: 8vw;
+      height: 15vh;
+      position: relative;
+      margin-left: 91vw;
+      margin-top: 68vh;
+      cursor: pointer;
+    }
+    .next:hover{
+      animation-name:next;
+      animation-duration:3s
+    }
+    @keyframes next{
+      20%{transform:rotate(45deg);
+         background-color:#0c4027;
+       }
+      50%{
+        transform:rotate(90deg);
+        background-color:#1070a2;
+      }
+      70%{
+        transform:rotate(265deg);
+        background-color:#e4dccf;
+      }
+      100%{
+        transform: rotate(360deg);
+        background-color:#d7af43;
+      }
+    }
+    img.ocean {
+      width: 38vw;
+      margin-left: 31vw;
+      position: relative;
+      margin-top: -87vh;
+    }
+    p{
+      font-size: 18px;
+      font-family: 'Audiowide', cursive;
+      position: relative;
+      text-align: center;
+      width: 30vw;
+      line-height: 3vw;
+      margin-left: 35vw;
+      margin-top: -22vh;
+    }
+
+</style>
+  </head>
+
+  <body>
+    <div>
+      <a href="file:///Users/ZMM/Desktop/interactive-2/final%20project%20/homepage.html"><div class="one back"></div></a>
+      <a href="file:///Users/ZMM/Desktop/interactive-2/final%20project%20/final4.html"><div class="two next"></div></a>
+    </div>
+    <div>
+      <img class="ocean" src="images/ocean.jpg">
+      <p>Potable Water, 2005,
+          Mark Bradford
+        collection of Hunter Gray
+      </p>
+    </div>
+</body></html>

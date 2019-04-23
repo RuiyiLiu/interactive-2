@@ -1,0 +1,223 @@
+<html lang="en"><head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer=""></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+    <style>
+    body{
+      background-color:#e4dccf;
+    }
+    h1{
+      font-size: 25vw;
+      font-family: 'Audiowide', cursive;
+      position: absolute;
+      color:#0c4027;
+      top: 30vh;
+      left: 40vw;
+      padding: 0;
+      margin:0;
+    }
+
+    h2{
+      font-size: 20vw;
+      font-family: 'Audiowide', cursive;
+      position: absolute;
+      color:black;
+      left: 26vw;
+      top: 20vh;
+      padding: 0;
+      margin: 0;
+    }
+    .color:hover{
+    animation-name:color;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes color {
+    0% {
+      color: black;
+    }
+    25%{
+      color:#1070a2;
+    }
+    50%{
+      color:#d7af43;
+    }
+    75%{
+      color:#0c4027;
+    }
+    100% {
+      color: white;
+    }
+  }
+    h3{
+      font-size: 25vw;
+      font-family: 'Audiowide', cursive;
+      position: absolute;
+      color: #d7af43;
+      left: 75vw;
+      top: 25vh;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+    }
+
+    h4{
+      font-size: 20vw;
+      font-family: 'Audiowide', cursive;
+      position: absolute;
+      color: white;
+      left: 63vw;
+      top: 20vh;
+      padding: 0;
+      margin: 0;
+    }
+    .change:hover{
+      animation-name:change;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes change {
+      0% {
+        color: white;
+      }
+      25%{
+        color:#0c4027;
+      }
+      50%{
+        color:#1070a2;
+      }
+      75%{
+        color:#d7af43;
+      }
+      100% {
+        color: black;
+      }
+    }
+    h5{
+      font-size: 25vw;
+      font-family: 'Audiowide', cursive;
+      position: absolute;
+      color: #1070a2;
+      left: 10vw;
+      top: -6vh;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+    }
+
+
+</style>
+  </head>
+
+  <body>
+    <h1 id="two">2</h1>
+    <h2 class="color">+</h2>
+    <h3 id="three">3</h3>
+    <h4 class="change">=</h4>
+    <h5 id="five">5</h5>
+    <div>
+    <div class="green"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    </div>
+
+
+<script>
+
+  let two = document.querySelector('#two')
+  let three = document.querySelector('#three')
+  let five = document.querySelector('#five')
+
+  let isDragging = undefined
+let offsetX = 0
+let offsetY = 0
+
+
+  window.addEventListener('mousemove',drag)
+  window.addEventListener('mouseup',clear)
+
+  two.addEventListener('mousedown',grab)
+  three.addEventListener('mousedown',grab)
+  five.addEventListener('mousedown',grab)
+
+  function grab(e){
+    isDragging = e.target
+    offsetX = e.offsetX
+    offsetY = e.offsetY
+  }
+
+
+  let isthreeRight = false
+  let istwoRight = false
+  let isfiveRight = false
+
+  function clear(e){
+
+    let x = e.clientX - offsetX
+    let y = e.clientY -offsetY
+
+    if(isDragging.id === 'two'){
+      if(x > 20 && x < 60){
+        console.log('x right')
+      if(y > 50 && y < 100){
+        console.log('y right')
+          istwoRight = true
+        }
+      }
+    }
+    if(isDragging.id === 'three'){
+      if(x > 490 && x < 550){
+        console.log('x right')
+      if(y > 50 && y < 100){
+        console.log('y right')
+          isthreeRight = true
+        }
+      }
+    }
+    if(isDragging.id === 'five'){
+      if(x > 960 && x < 1130){
+        console.log('x right')
+      if(y > 50 && y < 100){
+        console.log('y right')
+          isfiveRight = true
+        }
+      }
+    }
+
+    if(istwoRight && isthreeRight && isfiveRight){
+
+      window.location.href = "file:///Users/ZMM/Desktop/interactive-2/final%20project%20/homepage.html"
+    }
+
+
+
+    isDragging = undefined
+  }
+
+  function drag(e){
+
+    if(isDragging){
+      let x = e.clientX - offsetX
+      let y = e.clientY -offsetY
+      console.log(x,y)
+
+      isDragging.style.left = x + 'px'
+      isDragging.style.top = y + 'px'
+    }
+  }
+
+
+
+</script>
+
+
+</body></html>
