@@ -10,17 +10,19 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer=""></script>
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
     <style>
     body{
       background-color:#e4dccf;
     }
     .one{
-      background-color: #d7af43;
+      background-color: #1070a2;
       width: 8vw;
       height: 15vh;
       position: relative;
       cursor: pointer;
+      top:83vh;
     }
     .back:hover{
       animation-name: back;
@@ -50,50 +52,59 @@
       }
     }
     .two{
-      background-color: #0c4027;
-      width: 8vw;
-      height: 15vh;
-      position: relative;
-      margin-left: 91vw;
-      margin-top: 68vh;
+      font-size: 10vw;
+      font-family: 'Audiowide', cursive;
+      position: absolute;
+      color: #0c4027;
+      left: 92vw;
+      top: -4vh;
       cursor: pointer;
+      padding: 0;
+      margin: 0;
     }
     .next:hover{
       animation-name:next;
       animation-duration:3s
     }
-    @keyframes next{
-      20%{transform:rotate(45deg);
-         background-color:#1070a2;
-       }
-      50%{
-        transform:rotate(90deg);
-        background-color:#e4dccf;
+    @keyframes next {
+      from {
+        transform: scale3d(1, 1, 1);
       }
-      70%{
-        transform:rotate(265deg);
-        background-color:#d7af43;
+      10%,
+      20% {
+        transform: scale3d(0.3, 0.3, 0.3) rotate3d(0, 0, 1, 6deg);
       }
-      100%{
-        transform: rotate(360deg);
-        background-color:#0c4027;
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -10deg);
+      }
+      40%,
+      60%,
+      80% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 4deg);
+      }
+      to {
+        transform: scale3d(1, 1, 1);
       }
     }
+
     img.square {
       width: 33vw;
-      margin-left: 33vw;
+      margin-left: 34vw;
       position: relative;
-      margin-top: -87vh;
+      margin-top: -2vh;
     }
     p{
       font-size: 18px;
-      font-family: 'Audiowide', cursive;
+      font-family: 'PT Sans', sans-serif;
       position: relative;
       text-align: center;
-      width: 31vw;
+      width: 24vw;
       line-height: 3vw;
-      margin-left: 34vw;
-      margin-top: -22vh;
+      margin-left: 38vw;
+      margin-top: 3vh;
     }
 
 </style>
@@ -102,7 +113,7 @@
   <body>
     <div>
       <a href="file:///Users/ZMM/Desktop/interactive-2/final%20project%20/homepage.html"><div class="one back"></div></a>
-      <a href="file:///Users/ZMM/Desktop/interactive-2/final%20project%20/final1.html"><div class="two next"></div></a>
+      <a href="file:///Users/ZMM/Desktop/interactive-2/final%20project%20/final1.html"><div class="two next">2</div></a>
     </div>
     <div>
       <img class="square" src="images/square.jpg">
